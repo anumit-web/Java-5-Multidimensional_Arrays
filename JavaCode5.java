@@ -27,7 +27,23 @@ public class JavaCode5 {
             System.out.println();
         }
 
+        System.out.println("Three dimensional array");
+        // 12 rows ang 5 columns and 30 depth
+        int[][][] daily_sales_report = new int[12][5][30];
+        System.out.println("Total items in array = 1,800 (12x5x30)");
+
+        // Print items in 3D array
+        for (int i = 0; i < daily_sales_report.length; i++) {
+            for (int j = 0; j < daily_sales_report[i].length; j++) {
+                for (int k = 0; k < daily_sales_report[i][j].length; k++) {
+                    System.out.print(daily_sales_report[i][j][k] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+
         System.out.println("------------------------------------------------------------");
-        
+
     }
 }
